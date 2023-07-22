@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script src= "code.jquery.com_jquery-3.7.0.min.js"></script>
+</head>
+<script>
+	$(document).ready(function(){
+		$('p').on({
+		mouseenter:function(){
+		$(this).css("background-color","red");
+		$(this).html("mouse-over");
+		},
+mouseleave:function(){
+		$(this).css("background-color","pink");
+		$(this).html("mouse-leave");
+		},
+click:function(){
+		$(this).css("background-color","blue");
+		$(this).html("mouse-clicked-1-time");
+		},
+dblclick:function(){
+		$(this).css("background-color","yellow");
+		$(this).html("mouse-clicked-2-time");
+		}
+		});
+		});
+</script>
+<body>
+<p> Changes colors </p>
+
+</body>
